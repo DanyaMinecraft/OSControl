@@ -1,6 +1,5 @@
 import threading
 import time
-import tkinter.messagebox
 from datetime import datetime, timedelta
 from tkinter import *
 from tkinter import messagebox
@@ -28,7 +27,7 @@ def Start():  # Кнопка запуска меню программы
     menu.geometry("720x480")
 
 
-def Quit(tk=None):
+def Quit():
     if messagebox.askokcancel("Выход!", "Вы уверены что хотите выйти из программы?"):
         quit()
 
