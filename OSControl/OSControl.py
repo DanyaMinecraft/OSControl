@@ -7,7 +7,7 @@ from tkinter import messagebox
 import Info.Information
 
 
-def clock_update():  # Часики
+def clock_update():  # Часы
     while True:
         lbl_time['text'] = (datetime.utcnow() + timedelta(hours=3)).strftime('Сейчас: %d.%m.%g %H:%M:%S')
         time.sleep(0.5)
